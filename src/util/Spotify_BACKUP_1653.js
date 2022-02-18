@@ -1,10 +1,10 @@
 <<<<<<< HEAD
-const clientId = "****************************";
+const clientId = "**************************";
 const redirectUri = "http://localhost:3000";
 =======
 const clientId = "****************************";
 const redirectUri = "localhost:3000";
->>>>>>> 
+>>>>>>> 3af125651d7633aaefd9ed248f6afdabc200b51e
 let accessToken;
 
 const Spotify = {
