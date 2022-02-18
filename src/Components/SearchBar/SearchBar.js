@@ -17,6 +17,9 @@ export default class SearchBar extends React.Component {
 
   handleTermChange(event) {
     this.setState({ term: event.target.value });
+    if (event.keyCode === 13) {
+      this.search();
+    }
   }
 
   render() {
@@ -25,6 +28,7 @@ export default class SearchBar extends React.Component {
         <input
           placeholder="Enter A Song, Album, or Artist"
           onChange={this.handleTermChange}
+          onKeyUp={this.handleTermChange}
         />
         <button className="SearchButton" onClick={this.search}>
           SEARCH
